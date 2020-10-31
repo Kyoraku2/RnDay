@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>À propos &mdash; {{{page.titlesuffix}}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="À propos des étudiants du CMI Informatique de Besançon, du Cursus Master en Ingénierie et du réseau Figure.">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="icon" href="favicon.ico" />
+
+</head>
+
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-navbar py-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">{{{page.h1.1}}}<span class="text-primary">{{{page.h1.2}}}</span></a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="{{{navigation.index.href}}}">{{{navigation.index.label}}}</a></li>
+                <li><a href="{{{navigation.activities.href}}}">{{{navigation.activities.label}}}</a></li>
+                <li class="active"><a href="{{{navigation.about.href}}}">{{{navigation.about.label}}}</a></li>
+                <li><a href="{{{navigation.inscription.href}}}">{{{navigation.inscription.label}}}</a></li>
+                <li class="cta"><a href="{{{navigation.contact.href}}}">{{{navigation.contact.label}}}</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-navbar py-3" style="background-color:red;text-align:center;font-size:2em; top: 95px;">
+      Évènement reporté pour cause de fermeture de l'Université — plus d'informations ultérieurement
+    </div>
+
+    <!-- Title -->
+    <div class="site-section site-hero inner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-11">
+            <span class="d-block mb-3 caption" data-aos="fade-up">Apprenons à nous connaître</span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="100">Qui sommes-nous ?</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Evenment -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4 ">
+            <div class="site-section-heading" data-aos="fade-up" data-aos-delay="100">
+              <h2>{{{whoAreWe.title}}}</h2>
+
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="150">
+            <p>{{{whoAreWe.description.part1}}}</p>
+            <p>{{{whoAreWe.description.part2}}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300"><span class="text-primary">{{{whoAreWe.event.title}}}</span></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <p>{{{whoAreWe.event.description.part1}}}</p>
+            <p>{{{whoAreWe.event.description.part2}}}</p>
+            <p class="mb-5">{{{whoAreWe.event.description.part3}}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our team -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-10 mb-5">
+            <div class="site-section-heading" data-aos="fade-up">
+              <h2 class="text-center">{{{ourTeam.title}}}</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5 justify-content-center">
+          <div class="col-10" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{ourTeam.image}}" alt="{{ourTeam.title}}" class="img-fluid">
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          {{#ourTeam.ourTeam-array}}
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="{{data-aos-delay}}">
+              <div class="testimony text-center">
+                <figure>
+                  <img src="{{image}}" alt="Image de {{name}}" class="img-fluid">
+                </figure>
+                <blockquote>
+                  <p class="author mb-0">{{{name}}}</p>
+                  <p class="text-muted mb-4">{{{quality}}}</p>
+                  <p>{{{description}}}</p>
+                </blockquote>
+              </div>
+            </div>
+          {{/ourTeam.ourTeam-array}}
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Sponsors -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4 ">
+            <div class="site-section-heading" data-aos="fade-up">
+              <h2>{{{sponsors.title}}}</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <p>{{{sponsors.description}}}</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+
+          {{#sponsors.sponsors-array}}
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="{{data-aos-delay}}">
+              <a href="{{link}}">
+                <div style="text-align: center; margin: 20px">
+                  <img src="{{logo}}" alt="Logo {{name}}" class="img-fluid">
+                  <h2 style="margin-top: 1em;">{{name}}</h2>
+                  <p class="text-muted mb-4">{{{description}}}</p>
+                </div>
+              </a>
+            </div>
+          {{/sponsors.sponsors-array}}
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="350">
+          <div class="col-12 text-center pt-5">
+            <a href="contact.html" class="btn-custom" data-aos="fade-up" data-aos-delay="800"><span>{{{sponsors.become}}}</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">{{{footer.aboutEvent.label}}}</h2>
+            <p>{{{footer.aboutEvent.text}}}</p>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h2 class="footer-heading text-uppercase mb-4">{{{footer.quicklinksLabel}}}</h2>
+            <ul class="list-unstyled">
+              <li><a href="{{{navigation.index.href}}}">{{{navigation.index.label}}}</a></li>
+              <li><a href="{{{navigation.activities.href}}}">{{{navigation.activities.label}}}</a></li>
+              <li><a href="{{{navigation.about.href}}}">{{{navigation.about.label}}}</a></li>
+              <li><a href="{{{navigation.inscription.href}}}">{{{navigation.inscription.label}}}</a></li>
+              <li><a href="{{{navigation.contact.href}}}">{{{navigation.contact.label}}}</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">{{{footer.socialNetworks.label}}}</h2>
+            <p>
+              <a href="{{footer.socialNetworks.facebookLink}}" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="{{footer.socialNetworks.twitterLink}}" class="p-2"><span class="icon-twitter"></span></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-12 text-center">
+            <div class="border-top pt-5">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                {{{footer.credit}}}
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+              <p>
+                {{{footer.signature}}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

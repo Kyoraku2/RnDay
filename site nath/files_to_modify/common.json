@@ -1,0 +1,324 @@
+{
+  "page": {
+    "titlesuffix": "R&Day Besançon 2020 Comprendre la Sécurité Numérique",
+    "h1": {
+      "1": "R&",
+      "2": "Day"
+    }
+  },
+  "navigation": {
+    "index": {
+      "href": "index.html",
+      "label": "Accueil"
+    },
+    "about": {
+      "href": "about.html",
+      "label": "Qui sommes-nous"
+    },
+    "activities": {
+      "href": "activites.html",
+      "label": "Activités"
+    },
+    "inscription": {
+      "href": "inscription.html",
+      "label": "Réservation escape game"
+    },
+    "newsTOMODIFY": {
+      "href": "news.html",
+      "label": "Actualités"
+    },
+    "contact": {
+      "href": "contact.html",
+      "label": "Contactez-nous"
+    }
+  },
+  "speakers": {
+    "title": "Écouter",
+    "generalDescription": "Trois professionnels de la sécurité numérique viendront nous parler pendant trois conférences. Voir les horaires sur le planning.",
+    "speakers-array": [{
+        "css-order-lg-1": "",
+        "css-order-lg-2": "",
+        "side": "right",
+        "image": "https://members.femto-st.fr/alexandre-vernotte/sites/femto-st.fr.alexandre-vernotte/files/styles/photo/public/picture.jpg?itok=YFqPTOQx",
+        "name": "Alexandre Vernotte",
+        "quality": "Chercheur à l'institut FEMTO-ST de Besançon",
+        "description": "Fort de ses recherches en tests de vulnérabilité, Alexandre Vernotte nous parlera du redoutable virus Stuxnet",
+        "networksLabel": "En savoir plus sur A. Vernotte",
+        "networks": [{
+            "url": "https://members.femto-st.fr/alexandre-vernotte/",
+            "icon-class": "icon-external-link"
+          },
+          {
+            "url": "https://www.femto-st.fr/en/femto-people/avernott",
+            "icon-class": "icon-book"
+          }
+        ]
+      },
+      {
+        "css-order-lg-1": "order-lg-1",
+        "css-order-lg-2": "order-lg-2",
+        "side": "left",
+        "image": "images/logo-gendarmerie-nationale-200x200.jpg",
+        "name": "Major P. Pintapary ",
+        "quality": "Chef CICN du Doubs, spécialiste NTECH",
+        "description": "Travaillant à la Cellule d'Investigations Criminelles et Numériques (CICN), le Major Pintapary nous montrera les réponses apportées à la cybercriminalité par la Gendarmerie.",
+        "networksLabel": "",
+        "networks": []
+      },
+      {
+        "css-order-lg-1": "",
+        "css-order-lg-2": "",
+        "side": "right",
+        "image": "https://www.femto-st.fr/sites/default/files/styles/user_annuaire/public/pictures/picture-289-1562434063.jpg?itok=UgElMEfY",
+        "name": "Jean-Michel Friedt",
+        "quality": "Chercheur au Département Temps-Fréquence de l'UFC",
+        "description": "« Sommes-nous où nous pensons être ? Est-il l'heure qu'indique mon téléphone ? Brouillage et leurrage de GPS : enjeux, détection et solutions »",
+        "networksLabel": "En savoir plus sur J-M. Friedt",
+        "networks": [{
+            "url": "https://www.femto-st.fr/fr/personnel-femto/jeanmichelfriedt",
+            "icon-class": "icon-external-link"
+          },
+          {
+            "url": "http://jmfriedt.free.fr/",
+            "icon-class": "icon-book"
+          }
+        ]
+      }
+    ]
+  },
+  "workshops": {
+    "title": "Pratiquer",
+    "generalDescription": "",
+    "workshops-array": [{
+      "css-order-lg-1": "",
+      "css-order-lg-2": "",
+      "side": "right",
+      "image": "images/escape-game.jpg",
+      "title": "Escape game",
+      "subtitle": "Saurez-vous échapper au hacker ?",
+      "description": "Dans cet <i>escape game</i>, vous incarnerez une équipe en situation de crise chargée d'arrêter une attaque pirate en temps réel.",
+      "link": true,
+      "link-href": "inscription.html",
+      "link-text": "Réservez votre place à l'escape game"
+
+    }, {
+      "css-order-lg-1": "order-lg-1",
+      "css-order-lg-2": "order-lg-2",
+      "side": "left",
+      "image": "images/workshop.jpg",
+      "title": "Ateliers",
+      "subtitle": "Apprendre en pratiquant",
+      "description": "Dans nos ateliers participatifs, vous pourrez manipuler différentes notions liées à la sécurité informatique. Venez les découvrir sur place ! "
+    }]
+  },
+  "program": {
+    "title": "Programme",
+    "description": "Nous accueillons des lycéens du Lycée C.N. Ledoux le matin, et l'après-midi les étudiants et professeurs, ainsi que toutes les personnes qui le souhaitent. Les conférences sont ouvertes à tous ! ",
+    "program-array": [{
+        "css-class": " border-top",
+        "data-aos-delay": "100",
+        "hour": "8",
+        "minute": "30",
+        "description": "Accueil des élèves du Lycée C.N. Ledoux",
+        "speaker": ""
+      },
+      {
+        "css-class": " border-top",
+        "data-aos-delay": "150",
+        "hour": "9",
+        "minute": "45",
+        "description": "Conférence 1 (ouverte à tous) – Stuxnet : lorsque l'informatiquer est devenue une arme de guerre",
+        "speaker": "A. Vernotte"
+      },
+      {
+        "css-class": " border-top",
+        "data-aos-delay": "200",
+        "hour": "14",
+        "minute": "30",
+        "description": "Conférence 2 (ouverte à tous) – Gendarmerie et cybercriminalités, quelles réponses apportées ?",
+        "speaker": "Major P. Pintapary"
+      },
+      {
+        "css-class": " border-top",
+        "data-aos-delay": "250",
+        "hour": "15",
+        "minute": "00",
+        "description": "<a href='inscription.html'>Escape game</a> & ateliers ouverts à tous",
+        "speaker": ""
+      },
+      {
+        "css-class": " border-top",
+        "data-aos-delay": "300",
+        "hour": "16",
+        "minute": "30",
+        "description": "Conférence 3 (ouverte à tous) – Sommes-nous où nous pensons être ? Est-il l'heure qu'indique mon téléphone ? Brouillage et leurrage de GPS : enjeux, détection et solutions",
+        "speaker": "J.-M. Friedt"
+      },
+      {
+        "css-class": " border-top",
+        "data-aos-delay": "350",
+        "hour": "17",
+        "minute": "00",
+        "description": "Conclusion de la journée",
+        "speaker": ""
+      }
+    ]
+  },
+  "whoAreWe": {
+    "title": "Le Cursus Master en Ingénierie",
+    "Ingénierie": {
+      "part1": "Le <a href='https://reseau-figure.fr/a-propos-du-cmi/'>Cursus Master en Ingénierie</a> est une formation proposée par le réseau Figure et soutenue à Besançon par <a href='http://sciences.univ-fcomte.fr/pages/fr/menu3795/formations/cmi-informatique-besancon-17938-15943.html'>l’institut FEMTO-ST</a> et notamment avec son <a href='https://www.femto-st.fr/fr/Departements-de-recherche/DISC/Presentation'>Département Informatique des Systèmes Complexes (DISC)</a>.",
+      "part2": "Elle ambitionne entre autres de former les étudiants aux problématiques actuelles à travers des activités pédagogiques de mises en situation."
+    },
+    "event": {
+      "title": "La R&Day",
+      "description": {
+        "part1": "La Journée Recherche et Développement, ou <i style='color: #ff5733;'>R&Day</i> comme nous l'appelons, est un évènement organisé dans le cadre de la formation CMI par les étudiants en 2<sup>ème</sup> année de Licence.",
+        "part2": "Elle est l'occasion pour nous d'apprendre à créer un événément, mais surtout de vous faire entrer dans notre univers en vous faisant découvrir un pan de notre corps de métier : la sécurité dans le monde de l'Informatique.",
+        "part3": ""
+      },
+      "author": {
+        "name": "Nathanaël H.",
+        "image": "images/nathanael.jpg",
+        "quality": "Référent web"
+      }
+    }
+  },
+  "ourTeam": {
+    "title": "Le CMI Informatique de Besançon",
+    "image": "images/cmi_informatique.jpg",
+    "ourTeam-array": [{
+        "data-aos-delay": "100",
+        "name": "Hélène",
+        "image": "images/helene.jpg",
+        "quality": "Référent logistique<br/>Conception d'un atelier",
+        "description": ""
+      },
+      {
+        "data-aos-delay": "150",
+        "name": "Antoine",
+        "image": "images/antoine.jpg",
+        "quality": "Conception de l’escape game<br/>Référent communication étudiants",
+        "description": ""
+      },
+      {
+        "data-aos-delay": "200",
+        "name": "Lucas",
+        "image": "images/lucas.jpg",
+        "quality": "Conception de l’escape game<br/>Référent logistique",
+        "description": ""
+      },
+      {
+        "data-aos-delay": "250",
+        "name": "Joseph",
+        "image": "images/joseph.jpg",
+        "quality": "Référent  graphisme<br/>Conception d’ateliers",
+        "description": ""
+      },
+      {
+        "data-aos-delay": "300",
+        "name": "Fabian",
+        "image": "images/fabian.jpg",
+        "quality": "Référent sponsors et contact lycées<br/>Conception de l’escape game",
+        "description": ""
+      },
+      {
+        "data-aos-delay": "350",
+        "name": "Nathanaël",
+        "image": "images/nathanael.jpg",
+        "quality": "Référent communication web<br/>Référent des ateliers",
+        "description": ""
+      },
+      {
+        "data-aos-delay": "400",
+        "name": "Baptiste",
+        "image": "images/baptiste.jpg",
+        "quality": "Référent conférences<br/>Conception d'un atelier",
+        "description": ""
+      },
+      {
+        "data-aos-delay": "450",
+        "name": "Medhi",
+        "image": "images/medhi.jpg",
+        "quality": "Référent réseaux sociaux<br/>Conception d'un atelier",
+        "description": ""
+      },
+      {
+        "data-aos-delay": "500",
+        "name": "Valentin",
+        "image": "images/valentin.jpg",
+        "quality": "Référent photo et contact lycées<br/>Référent escape game",
+        "description": ""
+      }
+    ]
+  },
+  "sponsors": {
+    "title": "Partenaires",
+    "description": "",
+    "become": "Devenir partenaire de l'évènement",
+    "sponsors-array": [{
+        "data-aos-delay": "100",
+        "name": "Réseau Figure",
+        "description": "Formation à l’Ingénierie par des Universités de Recherche",
+        "logo": "images/reseau_figure.png",
+        "link": "https://reseau-figure.fr/"
+      },
+      {
+        "data-aos-delay": "200",
+        "name": "Jet1oeil",
+        "description": "Solutions de vidéosurveillance",
+        "logo": "images/logo_jet1oeil.png",
+        "link": "http://www.jet1oeil.com/"
+      },
+      {
+        "data-aos-delay": "300",
+        "name": "UFR Sciences et Techniques",
+        "description": "Université de Franche-Comté",
+        "logo": "images/Logo_UFRST_UFC_2018.png",
+        "link": "http://sciences.univ-fcomte.fr/"
+      },
+      {
+        "data-aos-delay": "400",
+        "name": "Association CMI Franche-Comté",
+        "description": "Étudiants en Cursus Master en Ingénierie",
+        "logo": "images/logo_asso_cmi_fc.png",
+        "link": "http://facebook.fr/AssoCMI.FC/"
+      },
+      {
+        "data-aos-delay": "500",
+        "name": "Voyage Heure",
+        "description": "Escape game à Besançon",
+        "logo": "images/voyage_heure.png",
+        "link": "https://levoyageheure.com"
+      },
+      {
+        "data-aos-delay": "600",
+        "name": "OFNI",
+        "description": "Étudiants en Informatique bisontins",
+        "logo": "images/ofni.png",
+        "link": "https://ofni.asso.fr/"
+      },
+      {
+        "data-aos-delay": "700",
+        "name": "Investissement d'Avenir",
+        "description": "",
+        "logo": "images/logo_sigInvestissementDAvenir-375x300.png",
+        "link": "http://www.prefectures-regions.gouv.fr/occitanie/Grands-dossiers/Le-programme-des-investissements-d-avenir-PIA"
+      }
+    ]
+  },
+  "footer": {
+    "aboutEvent": {
+      "label": "À propos de l'évènement",
+      "text": "La <i>R&Day</i> est un évènement de sensibilisation à la sécurité numérique, organisé par les étudiants du CMI Informatique de Besançon"
+    },
+    "quicklinksLabel": "Liens rapides",
+    "socialNetworks": {
+      "label": "Suivez-nous sur nos réseaux",
+      "facebookLink": "https://www.facebook.com/events/675885512948455/",
+      "twitterLink": "https://twitter.com/rnday_besancon"
+    },
+    "credit": "Copyright &copy;&nbsp;2020&nbsp;Tous droits réservés | Modèle réalisé avec <i class='icon-heart text-primary' aria-hidden='true'></i> par <a href='https://colorlib.com' target='_blank' rel='noopener'>Colorlib</a>",
+    "signature": "Adapté par <a href='https://nathanaelhoun.fr'>Nathanaël H.</a> pour sa promotion CMI. Dernière mise à jour le 13/03/2020."
+  }
+}
