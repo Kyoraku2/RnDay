@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
+  background: rgb(6, 12, 34, 0.98);
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -192,6 +192,57 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
+#header_s {
+  height: 90px;
+  padding: 25px 0;
+  background: rgb(6, 12, 34, 0.98);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+@media (max-width: 991px) {
+  #header_s {
+    background: rgba(6, 12, 34, 0.98);
+    height: 70px;
+    padding: 15px 0;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 1199px) {
+  #header_s .container {
+    max-width: 100%;
+  }
+}
+
+#header_s #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header_s #logo h1 span {
+  color: #DD5F16;
+}
+
+#header_s #logo h1 a, #header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header_s #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1122,7 +1173,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
-  height: 160px;
+  height: 260px;
 }
 
 #supporters .supporter-logo:hover img {
