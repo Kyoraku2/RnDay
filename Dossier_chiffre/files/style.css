@@ -1,0 +1,59 @@
+@font-face{
+    font-family: 'digital';
+    src: url(digital-7/digital-7.ttf);
+}
+
+body{
+    background-image: url(background.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 7em;
+    color: red;
+    font-family: digital;
+    text-shadow: 8px 8px 8px black;
+}
+
+#Az56{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-size: 2.3em;
+    font-family: digital;
+    font-weight: bold;
+    color: green;
+    background-color: black;
+    padding : 0.2em;
+}
+
+#m2Q5{
+    width: 11em;
+    font-size:12ex;
+    font-family: digital;
+    text-align: center;
+    color: green;
+    background-color: black;
+}
+
+#cX0i{
+    font-size: 3em;
+    font-family: digital;
+    color: green;
+    background-color: black;
+}
+
+input{
+    border: groove 5px  red;
+    box-shadow: 8px 8px 8px black;
+}
