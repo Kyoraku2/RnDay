@@ -1002,6 +1002,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #venue .venue-info:before {
