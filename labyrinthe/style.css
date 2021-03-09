@@ -1,0 +1,48 @@
+html, body  {
+    background: url(./fond.png) no-repeat;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font: 15px/1.4 Sans-Serif;
+}
+
+
+main{
+    background-color:rgb(42,134,157);
+    width: 800px;
+    min-height: 800px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 5px solid;
+}
+
+#cvs{
+    background-color: white;
+    border: solid 1px #000;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h1{
+    color: rgb(255,127,39);
+}
+
+#vid{ 
+    margin-top: 2em;
+    border-top: #1CCDDD solid 3px;
+    width: 800px;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+button{
+    margin-bottom: 1em;
+}
