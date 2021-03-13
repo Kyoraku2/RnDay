@@ -1,0 +1,186 @@
+<!Doctype HTML>
+<html>
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Particule-wave duality</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body onload="window.location.href = '#openModal'">
+      <img id="main_img" src ="img/animation_img.png"/>
+
+      <div id="openModal" class = modal>
+        <div class="modal_content">
+          <div class="slider">
+
+            <div class="active" id="rules">
+              <h2>Bienvenue !</h2>
+              <p class="regularText">
+                On observe une multitude de phénomènes pouvant paraître contres-intuitifs en physique quantique. 
+                L’expérience des fentes de Young*.  peut être reproduite en envoyant un objet quantique (il peut s’agir de photons, électrons, protons, atomes …) face aux doubles fentes. Lors de l’envoi l’objet se comporte comme une onde. Ce n’est que lorsque celui-ci touche la plaque cible qu’il va se réduire en un point où l’onde a la plus forte intensité. On appelle ce phénomène le principe de décohérence quantique (transition entre les règles de la physique quantique et celle de la physique classique).
+              </p>
+              <br>
+              <p class="regularText">
+                <strong>Il est toutefois intéressant de noter que la présence d’un acteur extérieur dans l’expérience modifie l’issue de celle-ci.</strong>
+              </p>
+              <br>
+              <p class="annotations">
+                *L’expérience des fentes de Young consiste à envoyer un signal lumineux sur une double fente. On observe alors des interférences produites par le signal source mettant en lumière le phénomène de dualité onde-corpuscule du rayon.
+              </p>
+              <br>
+              <br>
+              <br>
+              <a href="#" class = "modal_close">&times;</a>
+            </div>
+            <div id="goal">
+              <br>
+              <p>Votre objectif est de reproduire ce motif sur l'écran :</p>
+              <br>
+              <img id="target" src="img/Correct_Intensity_3.png"/>
+              <a href="#" class = "modal_close">&times;</a>
+            </div>
+
+            <span class="slider-nav">
+              <span class="btn-nav right">⟸</span>
+              <span class="btn-nav left">⟹</span>
+            </span>
+
+          </div>
+        </div>
+      </div>
+      
+    
+      <div id="pattern" class="modal">
+        <div class="modal_content">
+          <img id="pattern" src = "img/Correct_Intensity_3.png"/>
+          <a href="#" class = "modal_close">&times;</a>
+        </div>
+      </div>
+
+      <div id="good_result" class="modal">
+        <div class="modal_content">
+          <h3>Félicitation !</h3>
+          <p >Vous avez réussi l'énigme</p>
+          <p >Voici le mot de passe :</p>
+          <div id="password_img">
+            <img class="password" src="img/color_1.png"/>
+            <img class="password" src="img/color_2.png"/>
+            <img class="password" src="img/color_3.png"/>
+            <img class="password" src="img/color_4.png"/>
+            <img class="password" src="img/color_5.png"/>
+          </div>
+          <p><a id="home" href="">Retourner à l'accueil</a></p>
+        </div>
+      </div>
+
+      <div id="wrong_result">
+        <div id="wrong_1" class="modal">
+          <div class="modal_content">
+            <p class="results">Résultat incorrect :</p>
+            <img id ="wrong_1" src="img/Incorrect_Intensity_1.png"/>
+            <a href="#" class = "modal_close">&times;</a>
+          </div>
+        </div>
+
+        <div id="wrong_2" class="modal">
+          <div class="modal_content">
+            <p class="results">Résultat incorrect :</p>
+            <img id ="wrong_2" src="img/Incorrect_Intensity_2.png"/>
+            <a href="#" class = "modal_close">&times;</a>
+          </div>
+        </div>
+
+        <div id="wrong_3" class="modal">
+          <div class="modal_content">
+            <p class="results">Résultat incorrect :</p>
+            <img id ="wrong_3" src="img/Incorrect_Intensity_3.png"/>
+            <a href="#" class = "modal_close">&times;</a>
+          </div>
+        </div>
+
+        <div id="wrong_4" class="modal">
+          <div class="modal_content">
+            <p class="results">Résultat incorrect :</p>
+            <img id ="wrong_4" src="img/Correct_Intensity_1.png"/>
+            <a href="#" class = "modal_close">&times;</a>
+          </div>
+        </div>
+
+        <div id="wrong_5" class="modal">
+          <div class="modal_content">
+            <p class="results">Résultat incorrect :</p>
+            <img id ="wrong_5" src="img/Correct_Intensity_2.png"/>
+            <a href="#" class = "modal_close">&times;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="settings">
+        <fieldset>
+          <legend>Intensite de l'objet quantique
+            <input type="radio" name="choice" checked>Intensite 1
+            <input type="radio" name="choice">Intensite 2
+            <input type="radio" name="choice">Intensite 3
+          </legend>
+
+          <input type="checkbox" id="box" name="enable" checked>Activer / Desactiver la mesure
+
+           
+          <input id="send" type="submit">
+
+        </fieldset>
+      </div>
+
+      <div id="panel" class="modal">
+        <div class="modal_content">
+          <div id="digital_panel">
+            <table border="2" bgcolor="#3F74A1" cellspacing="20" cellpadding="10"> 
+              <tr> 
+                 <td align="center" colspan="3"><input id="output" placeholder="****"/></td> 
+              </tr> 
+              <tr> 
+                 <td align="center"><button onclick="inputNumber('7')">------7------</button></td> 
+                 <td align="center"><button onclick="inputNumber('8')">------8------</button></td> 
+                 <td align="center"><button onclick="inputNumber('9')">------9------</button></td> 
+              </tr> 
+              <tr> 
+                 <td align="center"><button onclick="inputNumber('4')">------4------</button></td> 
+                 <td align="center"><button onclick="inputNumber('5')">------5------</button></td> 
+                 <td align="center"><button onclick="inputNumber('6')">------6------</button></td> 
+              </tr> 
+              <tr> 
+                 <td align="center"><button onclick="inputNumber('1')">------1------</button></td> 
+                 <td align="center"><button onclick="inputNumber('2')">------2------</button></td> 
+                 <td align="center"><button onclick="inputNumber('3')">------3------</button></td> 
+              </tr> 
+              <tr> 
+                <td colspan="3" align="center"><button onclick="inputNumber('0')">------------------------0------------------------</button></td> 
+             </tr>
+             <tr>
+              <td colspan="3" align="center"><button onclick="erase()">---------------------Effacer---------------------</button></td>
+            </tr>
+             <tr>
+               <td colspan="3" align="center"><button onclick="validate()">----------------------Valider---------------------</button></td>
+             </tr>
+           </table> 
+          </div>
+          <a href="#" class = "modal_close">&times;</a>
+        </div>
+      </div>
+
+      <div id="validation" class="modal">
+        <div class="modal_content">
+          <p>Mesures de l'objet quantique désactivées.<br>Veuillez fermer la fenêtre.</p>
+          <a href="#" class = "modal_close">&times;</a>
+        </div>
+      </div>
+      
+      <a id="targetImg" href="#pattern">Motif cible</a>
+      <a id="Instructions" href="#openModal">Instructions</a>
+
+
+    </body>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</html>
