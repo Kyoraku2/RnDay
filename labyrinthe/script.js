@@ -434,7 +434,7 @@ boucleDeJeu = function() {
 }
 
 update = function(d) {
-    var delta = d - lastUpdate;
+    var delta = 20;
     lastUpdate = d;
     var c; 
     rectangle.x += rectangle.vecX * delta * rectangle.speed;
