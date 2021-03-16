@@ -32,6 +32,12 @@ h1{
     color: rgb(255,127,39);
 }
 
+#titre{
+    text-align: center;
+    font-style: bold;
+    font-size: 18px;
+}
+
 #vid{ 
     margin-top: 2em;
     border-top: #1CCDDD solid 3px;
