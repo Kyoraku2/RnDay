@@ -1,4 +1,3 @@
-
 var context = null;
 var rectangle = { x: 0, y: 0, hauteur: 0, largeur: 0, couleur: "", vecX: 0, vecY: 0, speed: 20/60 };
 var obstacles = [];
@@ -25,7 +24,6 @@ for(var i = 0; i<nbMurs;i++){
   obstacles[i] = [];
 }
 
-var petitPousset = [];
 init = function() {
 
     context = document.getElementById("cvs").getContext("2d");
@@ -474,31 +472,24 @@ update = function(d) {
       victory = true;
     }
 
-   graine = {
-    x: rectangle.x+rectangle.largeur/2-10,
-    y: rectangle.y+rectangle.hauteur/2-10,
-    largeur : 25,
-    hauteur: 25
-  }
-  if(!(collisionGraine(graine,petitPousset))){
-    petitPousset.push(graine);
-  }
-
 }
 
 render = function() {
     context.clearRect(0, 0, context.width, context.height);
 
-    for(var i = 0; i < petitPousset.length ; i++){
-      context.fillStyle = "blue";
-      context.fillRect(petitPousset[i].x, petitPousset[i].y, petitPousset[i].largeur, petitPousset[i].hauteur);
-    }
+    
+    //Pour la trainée
+    context.moveTo(rectangle.x+rectangle.largeur/2, rectangle.y+rectangle.hauteur/2);
+    context.arc(rectangle.x+rectangle.largeur/2,rectangle.y+rectangle.hauteur/2,10,0,Math.PI*2);
+    context.fillStyle='blue';
+    context.fill();
+    
 
     context.fillStyle = rectangle.couleur;
     context.drawImage(alien, rectangle.x, rectangle.y, rectangle.largeur, rectangle.hauteur);
 
     context.fillStyle="black";
-    for (var i=0; i < nbMurs; i++) {
+    for (var i=0; i < nbMurs; i++) {
       for(var j = 0 ; j<nbMurs ;j++){
         context.fillRect(obstacles[i][j].x, obstacles[i][j].y, obstacles[i][j].largeur, obstacles[i][j].hauteur);
       }
@@ -536,7 +527,7 @@ render = function() {
 
 captureAppuiToucheClavier = function(event) {
   if (victory == false) {
-    switch (event.keyCode) {
+    switch (event.keyCode) {
         case 38: // up arrow
             rectangle.vecY = -1;
             break;
@@ -555,7 +546,7 @@ captureAppuiToucheClavier = function(event) {
 }
 
 captureRelacheToucheClavier = function(event) {
-    switch (event.keyCode) {
+    switch (event.keyCode) {
     case 38: // up arrow
         if (rectangle.vecY < 0) {
             rectangle.vecY = 0;
@@ -613,13 +604,4 @@ collisionAvecObstacles = function(rect, obs) {
         }
     }
     return null;
-}
-
-collisionGraine = function(rect, obs) {
-  for (var i=0; i < obs.length; i++) {
-      if (collision(rect,obs[i])) {
-          return obs[i];
-      }
-  }
-  return null;
 }
