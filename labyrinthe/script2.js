@@ -992,10 +992,10 @@ update = function(d) {
     }
 
     graine = {
-      x: rectangle.x+rectangle.largeur/2-10,
-      y: rectangle.y+rectangle.hauteur/2-10,
-      largeur : 20,
-      hauteur: 20
+      x: rectangle.x+rectangle.largeur/2-5,
+      y: rectangle.y+rectangle.hauteur/2-5,
+      largeur : 10,
+      hauteur: 2
     }
     if(!(collisionGraine(graine,petitPousset))){
       petitPousset.push(graine);
@@ -1134,10 +1134,10 @@ collisionAvecObstacles = function(rect, obs) {
 }
 
 collisionGraine = function(rect, obs) {
-    for (var i=0; i < obs.length; i++) {
-        if (rect.x == obs[i].x && rect.y == obs[i].y) {
-            return obs[i];
-        }
-    }
-    return null;
+  for (var i=0; i < obs.length; i++) {
+      if (collision(rect, obs[i])) {
+          return obs[i];
+      }
+  }
+  return null;
 }
