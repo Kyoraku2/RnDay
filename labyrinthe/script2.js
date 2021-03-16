@@ -995,7 +995,7 @@ update = function(d) {
       x: rectangle.x+rectangle.largeur/2-5,
       y: rectangle.y+rectangle.hauteur/2-5,
       largeur : 10,
-      hauteur: 2
+      hauteur: 10
     }
     if(!(collisionGraine(graine,petitPousset))){
       petitPousset.push(graine);
