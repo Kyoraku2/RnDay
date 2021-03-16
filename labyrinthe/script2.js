@@ -25,7 +25,6 @@ for(var i = 0; i<nbMurs;i++){
   obstacles[i] = [];
 }
 
-var petitPousset = [];
 
 init = function() {
 
@@ -991,32 +990,23 @@ update = function(d) {
       victory = true;
     }
 
-    graine = {
-      x: rectangle.x+rectangle.largeur/2-5,
-      y: rectangle.y+rectangle.hauteur/2-5,
-      largeur : 10,
-      hauteur: 10
-    }
-    if(!(collisionGraine(graine,petitPousset))){
-      petitPousset.push(graine);
-    }
-
 
 }
 
 render = function() {
     context.clearRect(0, 0, context.width, context.height);
 
-    for(var i = 0; i < petitPousset.length ; i++){
-      context.fillStyle = "blue";
-      context.fillRect(petitPousset[i].x, petitPousset[i].y, petitPousset[i].largeur, petitPousset[i].hauteur);
-    }
+     //Pour la trainée
+     context.moveTo(rectangle.x+rectangle.largeur/2, rectangle.y+rectangle.hauteur/2);
+     context.arc(rectangle.x+rectangle.largeur/2,rectangle.y+rectangle.hauteur/2,5,0,Math.PI*2);
+     context.fillStyle='blue';
+     context.fill();
 
     context.fillStyle = rectangle.couleur;
     context.drawImage(alien, rectangle.x, rectangle.y, rectangle.largeur, rectangle.hauteur);
 
     context.fillStyle="black";
-    for (var i=0; i < nbMurs; i++) {
+    for (var i=0; i < nbMurs; i++) {
       for(var j = 0 ; j<nbMurs ;j++){
         context.fillRect(obstacles[i][j].x, obstacles[i][j].y, obstacles[i][j].largeur, obstacles[i][j].hauteur);
       }
@@ -1054,7 +1044,7 @@ render = function() {
 
 captureAppuiToucheClavier = function(event) {
   if (victory == false) {
-    switch (event.keyCode) {
+    switch (event.keyCode) {
         case 38: // up arrow
             rectangle.vecY = -1;
             break;
@@ -1073,7 +1063,7 @@ captureAppuiToucheClavier = function(event) {
 }
 
 captureRelacheToucheClavier = function(event) {
-    switch (event.keyCode) {
+    switch (event.keyCode) {
     case 38: // up arrow
         if (rectangle.vecY < 0) {
             rectangle.vecY = 0;
